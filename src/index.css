@@ -1,0 +1,39 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/*Nav Link*/
+@layer components {
+  .inactive {
+    @apply hover:bg-slate-400 hover:font-bold hover:text-black hover:border-x-[3px] rounded-full py-1 px-2;
+  }
+  .active {
+    @apply bg-slate-400 font-bold text-black border-x-[3px] border-slate-300 shadow-[5px_5px_0px_0px_rgba(109,40,217)];
+  }
+}
+
+/*Intro*/
+@layer components {
+  .social {
+    @apply fill-white w-6 h-6 shadow-white shadow-[0px_2px_11px_3px_#00000024];
+  }
+  .card {
+    @apply border-x-4 border-y-2 p-1 rounded-xl bg-black border-slate-800 shadow-white shadow-[0px_2px_11px_3px_#00000024] animate-pulse hover:animate-none cursor-pointer;
+  }
+  .card-round {
+    @apply border-x-4 border-y-2 rounded-full bg-black border-slate-800 shadow-white shadow-[0px_2px_11px_3px_#00000024] animate-spin hover:animate-none cursor-pointer;
+  }
+}
+
+/*Find Me*/
+@layer components {
+  .card-find {
+    @apply grid grid-cols-2 gap-4 justify-items-start py-2;
+  }
+  .card-social {
+    @apply grid grid-cols-[25px_1fr] sm:grid-cols-[40px_1fr] items-center border-x-4 border-y border-slate-600 rounded-md px-1 w-[6.4rem] sm:w-[8.5rem];
+  }
+  .hire-me {
+    @apply text-sm font-semibold font-creepster rounded-lg shadow-white shadow-[0px_2px_11px_3px_#00000024] animate-wave p-2 text-yellow-500 border-x-4 border-y-2 bg-black border-slate-800;
+  }
+}
